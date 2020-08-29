@@ -1,0 +1,395 @@
+h1, h2, h3{ font-family: Bradley Hand ITC;  }
+
+p{ font-family: verdana, arial; }
+
+h1{
+    text-align: center;
+    border: 10px solid yellow;
+    margin 20px 40px;
+}
+
+h1 img{ width: 50px; }
+
+#h2-index-title{ text-align: center; }
+
+.titles-container{  margin: 10px; }
+
+.bg-custom {  background-color: yellow; }
+
+.carousel-inner{ text-align: center; }
+
+.carousel-inner img {
+    width: 60%;
+    height: 100%;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon { 
+    filter: invert(1); 
+}
+
+.carousel-caption-style{
+    color: black;
+    font-size: 3vw;
+}
+
+#flex-container{
+    margin: 35px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;    
+}
+
+.flex-item{
+    width: 35%;
+    position: relative;
+    margin: 20px 10px;
+}
+
+.flex-header:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.flex-content{ padding-bottom: 20px; }
+
+.flex-moreinfo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#flex-servizi-title{ color: green; }
+
+#flex-animazione-title{ color: red; }
+
+#flex-moda-title{ color: blue; }
+
+#flex-eventi-title{ color:  orange; }
+
+.our-activities{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px 25px;
+    padding: 10px;
+}
+
+.our-activities .activity-item2 > img{ max-width: 100%; }
+
+.our-activities .activity-item3 > ul li{
+    text-align: left;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+/*.activity-item1.activity-item,
+.activity-item2.activity-item,
+.activity-item3.activity-item{
+width: 18%;
+min-width: 200px;
+max-width: 300px;
+text-align: center;
+}*/
+
+.activity-item{
+    width: 18%;
+    min-width: 200px;
+    text-align: center;
+}
+
+#form-section{ 
+    background-color: #333333;
+    text-align: center;
+}
+
+#form-header{ padding: 20px; }
+
+#form-header h3{ color: yellow; }
+
+#form-header p{ color: white; }
+
+form[name="myForm"]{ padding: 20px; }
+
+#form-section form[name="myForm"]{
+    color: white;
+    background-color: grey;
+}
+
+form input[class="custome-item-form"], textarea{
+    box-sizing: border-box;
+    width: 45%;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+
+footer > p{ text-align: center; }
+
+
+/*--------------------------------- START Chi Siamo Part -------------------------------*/
+
+#flex-container-chi-siamo{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flex-item-chi-siamo{
+    width: 45%;
+    margin: 10px;
+}
+
+/*----------------------------------- END Chi Siamo Part ----------------------------------*/
+
+/*----------------------------------- START Dove siamo Part ------------------------------*/
+
+#map-container{
+    text-align: center;
+    width: 100%;
+    margin: 60px 0px;
+}
+
+#map-container > iframe{
+    width: 80%;
+    /*    height: 600px;*/
+    border:  7px solid black;
+    border-radius: 40px;
+}
+
+
+/*--------------------------------- END Dove siamo Part -----------------------------------*/
+
+
+
+/*----------------------------------------- START Servizi------------------------------------*/
+
+#servizi-container{
+    width: 90%;
+    margin: auto;
+    font-size: 17px;
+}
+
+#servizi-container h3{ 
+    font-size: 28px;
+    font-family: Bradley Hand ITC;
+    font-weight: bold;
+}
+
+
+.servizi-flex-items-no-reverse{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 25px 0px;
+    border-radius: 20px;
+    padding: 10px 0px;
+    background-color: #fbde44ff;
+}
+
+.servizi-flex-items-reverse{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin: 25px 0px;
+    padding: 10px 0px;
+    background-color: #f65058ff;
+    border-radius: 20px;
+}
+
+.servizi-img{
+    width: 20%;
+    display: flex;    
+    align-content: center;
+    align-items: center;
+}
+
+.servizi-img img{ width: 100%; }
+
+.servizi-caption{
+    padding: 0px 20px;
+    width: 70%;
+    min-width: 200px;
+}
+
+.servizi-flex-items-reverse .servizi-img{ text-align: right; }
+
+.servizi-flex-items-no-reverse .servizi-img{ text-align: left; }
+
+/*----------------------------------- END Servizi ----------------------------------*/
+
+
+/* ----------------------------- START Media queries ------------------------------*/
+
+/*Bootstrap 3 uses 768px, 992px and 1200px. */
+/*
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+/* -------------------    START ALL   ----------------------*/
+    
+    .titles-container > h1{ font-size: 8vw;  }
+    
+    footer p:nth-of-type(2) { display: none; }
+    
+    footer{
+        font-size: 13px;
+        padding: 10px;
+    }
+    
+/* -------------------    END ALL   ----------------------*/
+
+
+/* -----------------    START INDEX   ----------------------*/    
+    
+    #h2-index-title{ font-size: 4vw; }
+    
+    .flex-item{
+        width: 100%;
+        font-size: 15px;
+    }
+    
+    #form-header{ font-size: 15px; }
+    
+    form input[class="custome-item-form"], 
+    textarea{ 
+        width: 90%; 
+    }         
+    
+/* -----------------    END INDEX   ----------------------*/
+    
+    
+    
+/* ----------------   START  CHI SIAMO   ----------------*/    
+    
+    .flex-item-chi-siamo{
+        width: 90%;
+        margin: 10px 0px;
+        font-size: 15px;
+    }        
+    
+ /*  --------------   END  CHI SIAMO   ---------------------*/
+    
+    
+
+/* ---------------   START DOVE SIAMO   ------------------*/    
+    
+    #map-container > iframe{
+    max-width: 60vw;
+    max-height: 80vw;
+}
+    
+/* ----------------   START DOVE SIAMO   ------------------*/    
+    
+    
+
+/*  ---------------  START INDEX & CHI SIAMO  --------------*/
+    
+    .activity-item2{ display: none; }
+
+    .activity-item{ width: 100%; }
+
+    .our-activities{ font-size: 15px; }
+
+    .activity-item3.activity-item ul li{ font-size: 17px; }
+    
+/*  ---------------  END INDEX & CHI SIAMO  --------------*/
+
+  
+    
+/* ----------------   START DOVE SIAMO --------------------*/
+    
+    #map-container > iframe{ width: 90%; }
+    
+/* -----------------   END DOVE SIAMO ---------------------*/
+    
+    
+/* ------------------   START SERVIZI  --------------------*/
+    
+    .servizi-img { display: none;  }
+
+    .servizi-caption{
+        width: 100%;
+        font-size: 15px;
+    }
+    
+/* -------------------   END SERVIZI  ----------------------*/
+
+}
+
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 992px){ 
+
+    /*    Chi siamo*/
+    .flex-item-chi-siamo{
+        width: 90%;
+        margin: 10px 0px;
+    }
+
+    /*    form index.html*/
+    form input[class="custome-item-form"], 
+    textarea{
+        width: 70%;
+    }
+}
+
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px)  and (max-width: 1200px){ 
+    form input[class="custome-item-form"], textarea{
+        width: 60%;
+    }
+
+
+@media  screen and (max-width: 1500px) and (min-width: 1200px){
+    .servizi-caption{
+        width: 60%;
+        min-width: 400px
+
+    }
+}
+
+/* END Media queries */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

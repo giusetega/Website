@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>SAME for you</title>
+        <meta charset="UTF-8"/>
+
+        <!-- Control the page's dimensions  -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Load css-->
+        <link rel="stylesheet" type="text/css" href="style/style.css"/>        
+
+        <!-- Load bootstrap css-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+        <!-- Load jQuery-->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+        <!-- Load bootstrap (JS)-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+        <script src="js/script.js"></script>
+
+    </head>
+    <body>
+        <div id="main-container">
+
+            <header >  <!-- Start header container -->
+                <div class="nav-container">
+                    <nav class="navbar navbar-expand-md navbar-light bg-custom">  <!-- Start nav menu-->
+                        <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="image" height="60" width="60">SAME for you</a>
+
+                        <!-- Start button for mobile device-->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav">  <!-- Start unordered list -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="chi_siamo.html">Chi siamo</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="dove_siamo.html">Dove siamo</a>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="dropdown"> <!-- Start dropdown -->
+                                        <a class="nav-link  dropdown-toggle" data-toggle="dropdown"href="#" role="button">Cosa offriamo</a>           
+                                        <div class="dropdown-menu">  <!-- Start dropdown-menu -->
+                                            <a class="dropdown-item" href="servizi.html">Servizi</a>
+                                            <a class="dropdown-item" href="animazione.html">Animazione</a>
+                                            <a class="dropdown-item" href="moda.html">Moda</a>
+                                            <a class="dropdown-item" href="eventi.html">Eventi</a>
+                                        </div> <!-- End dropdown-menu -->
+                                    </div>
+                                </li>
+                            </ul> <!-- End unordered list -->
+                        </div>  
+                    </nav>
+                </div>  <!-- End nav-container -->
+
+                <div class="titles-container">
+                    <h1><img src="img/logo.png">SAME for you</h1>
+                    <h2 id="h2-index-title">Servizi*Animazione*Moda*Eventi</h2>
+                </div>
+
+            </header>
+
+            <main>
+                <!-- Start Carousel -->
+                <div id="demo" class="carousel slide" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/mamma.jpg" alt="palloncini" >
+                            <div class="carousel-caption">
+                                <h3 class="carousel-caption-style">La luminosita' corretta per il Tuo giorno!</h3>
+                            </div>   
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/uomo_divano.jpg" alt="uomo_divano" >
+                            <div class="carousel-caption">
+                                <h3 class="carousel-caption-style">Mettiti comodo, pensiamo a tutto noi!!</h3>
+                            </div>   
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/mamma.jpg" alt="mamma" >
+                            <div class="carousel-caption">
+                                <h3 class="carousel-caption-style">Diamo voce alle tue idee! INSIEME è piu' bello.</h3>
+                            </div>   
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev" >
+                        <span class="carousel-control-prev-icon" ></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon" ></span>
+                    </a>
+                </div>
+                <!-- End Carousel -->
+
+                <div id="flex-container" onclick="selectPage(event)">
+                    <div class="flex-item" >
+                        <div class="flex-header" data-caratteristiche="servizi">
+                            <h4 class="flex-title" id="flex-servizi-title">  Servizi    </h4>
+                            <p class="flex-content" id="ciaoo" >  Party e convention, Centri estivi, Costumi e abiti da scena, servizi per cerimonie e Volantinaggio  </p>
+                        </div>
+                        <a href="servizi.html" class="flex-moreinfo">Leggi...</a>   
+                    </div>
+                    <div class="flex-item"  >
+                        <div class="flex-header" data-caratteristiche="animazione">
+                            <h4 class="flex-title" id="flex-animazione-title">  Animazione    </h4>
+                            <p class="flex-content">  Feste di compleanno e a tema, Animazione per enti e turistiche, Allestimenti personalizzati, Noleggio attrezzature, Baby parking e Colazione a sorpresa   </p>
+                        </div>
+                        <a href="servizi.html" class="flex-moreinfo">Leggi...</a>   
+                    </div>
+                    <div class="flex-item" >
+                        <div class="flex-header" data-caratteristiche="moda">
+                            <h4 class="flex-title" id="flex-moda-title">  Moda    </h4>
+                            <p class="flex-content">  Modelli e Attori, Hostess e Steward, Sfilate di moda, Concorsi, Servizi per aziende e Book fotografici  </p>
+                        </div>
+                        <a href="servizi.html" class="flex-moreinfo">Leggi...</a>   
+                    </div>
+                    <div class="flex-item" >
+                        <div class="flex-header" data-caratteristiche="eventi">
+                            <h4 class="flex-title" id="flex-eventi-title">  Eventi    </h4>
+                            <p class="flex-content"> Convegni e congressi, Manifestazioni, Fiere e mostre, Promozioni aziendali, Feste aziendali e Location convenzionate   </p>
+                        </div>
+                        <a href="servizi.html" class="flex-moreinfo">Leggi...</a>   
+                    </div>
+                </div>
+
+                <div class="our-activities">
+                    <div class="activity-item1 activity-item" >
+                        <h2> Cosa facciamo?</h2>
+                        <p>Ci occupiamo di organizzare a 360° il Tuo evento rendendolo unico in ogni sua sfaccettatura grazie alla preziosa collaborazione di personale professionista e formato in tutti i settori. Personalizzazione al 100% per garantire unicità ed emozione pura!!</p>
+
+                    </div>
+                    <div class="activity-item2 activity-item"  >
+                        <img src="img/professionista.jpg" >
+                    </div>
+
+
+                    <div class="activity-item3 activity-item" >
+                        <h2>Perchè sceglierci?</h2>
+                        <ul>
+                            <li><em>Cortesia</em></li>
+                            <li><em>Professionalità</em></li>
+                            <li><em>Originalità</em></li>
+                            <li><em>Esperienza e formazione nel settore</em></li>
+                        </ul>
+                        <p>...sono questi i punti di forza che rendono superiore la qualità dei servizi che Vi offriamo!</p>
+                    </div>
+                </div>
+
+                <div id="form-section">
+                    <div id="form-header">
+                        <h3>Lavoriamo per Te</h3>
+                        <p>Se vuoi un evento pazzesco non esitare a contattarci così da ricevere un preventivo gratuito e super personalizzato. Altrimenti compila il modulo sottostante per essere ricontattato il prima possibile!!! </p>
+                    </div>
+
+                    <form name="myForm"  method="get" action="Salvataggio dati.html">
+
+                        <label for="nome">Nome</label><br>
+                        <input type="text"  class="custome-item-form" name="nome"  placeholder="Inserisci il tuo nome"  maxlength="50"  id="nome" required /><br> 
+
+                        <label for="cognome">Cognome</label><br>
+                        <input type="text" class="custome-item-form"  name="cognome" placeholder="Inserisci il tuo cognome"  maxlength="50"   id="cognome" required  /><br> 
+
+                        <label>Sesso </label> <br>
+                        <input type="radio" name="sesso" id="maschio"  value="M">
+                        <label for="maschio">Maschio </label> 
+                        <input type="radio" name="sesso" id="femmina" value="F">
+                        <label for="femmina">Femmina</label> <br>
+
+                        <label    for="nascita">Data di nascita   </label><br>
+                        <input   type="date"  class="custome-item-form" name="nascita"  placeholder="Inserisci la tua data di nascita"id="nascita" max="2020-01-01" min="1940-01-01" required> <br> 
+
+                        <label for="age">Età</label><br>
+                        <input type="age" class="custome-item-form" name="age" placeholder="Inserisci i tuoi anni" id="age" min="18" max="80"  required/> <br> 
+
+                        <label for="email">Email</label><br>
+                        <input type="email" class="custome-item-form" name="email" placeholder="Inserisci la tua Email" id="email"/> <br> 
+
+                        <label for="note">Commento</label><br>
+                        <textarea id="note" name="note" placeholder="Lascia un commento o suggerimento..." required  col="40"rows="10"></textarea><br> 
+                        <input type="submit" class="custome-item-form" value="Registrati cliccando quì"/>
+                    </form>
+
+                </div>
+            </main>
+
+            <footer>
+                <p ><img src="img/logo.png" alt="image" height="45" width="45" >
+                    -SAME for you di Rachele Barbera Audis- Via Italia 21 Biella (BI) 13900-
+                </p>
+                <p >
+                    Contattaci venendo in sede o attraverso la nostra mail  (sameforyou@gmail.it) o compila il modulo e verrai contattato il prima possibile. Ti aspettiamo!!
+                </p>
+
+            </footer>
+
+        </div><!--  END main-container -->
+
+    </body>
+</html>
+
+
+
