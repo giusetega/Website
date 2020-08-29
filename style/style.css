@@ -1,6 +1,10 @@
 h1, h2, h3{ font-family: Bradley Hand ITC;  }
 
-p{ font-family: verdana, arial; }
+div > h3.carousel-caption-style{ 
+    font-family: Impact; 
+    font-style: fantasy;
+    background-color: white;
+}
 
 h1{
     text-align: center;
